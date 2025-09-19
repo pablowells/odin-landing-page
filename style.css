@@ -3,23 +3,42 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    background-color: #1f2937;
 }
-/* section */
 
+ * {outline: 2px solid red; }/* 2px width, solid style, red color */
+
+div, p, button, a {
+    font-family: 'Roboto';
+}
+
+a {
+  color: inherit; /* Makes link color same as surrounding text */
+  text-decoration: none;
+}
+
+/* section */
 .header {
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #1f2937;
     color: white;
+    font-family: 'Roboto';
+    margin: 24px;
 }
 
 .left {
     font-size: 24px;
+    font-weight: 900;
 }
 
 .right {
     display: flex;
+    font-size: 18px;
+    gap: 16px;
+    color:#e5e7eb;
+    text-decoration: none;
 }
 
 /* section */
@@ -27,23 +46,89 @@ body {
     display: flex;
     background-color: #1f2937;
     color: white;
+    justify-content: center;
+}
+.awe-left {
+    display: flex;
+    flex-direction: column;
+    font-size: 48px;
+    width: 445px;
+    height: 300px;
 }
 
+.maintext {
+    display: flex;
+    font-size: 48px;
+    margin:0;
+    margin-top: 50px;
+}
+
+.subtext {
+    display: flex;
+    font-size: 18px;
+    margin:0;
+
+}
+
+.awe-right {
+    display: flex;
+    width: 445px;
+    height: 300px;
+    align-items: center;
+}
+
+.signup {
+    margin-right:auto;
+    background-color: #3883f6;
+    color:white;
+    font-weight: bold;
+    border-radius: 8px; /* Applies an 8px radius to all corners */
+    width: 125px;
+    height: 30px;
+    outline: none;
+
+}
 /* section */
 .random {
-
+    background-color: white;
 }
 
 /* section */
 .quote {
     background-color: #e5e7eb;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+}
+
+.inspire {
+    font-size: 36px;
+    font-weight: 300;
+    color:#1f2937;
+    align-self: center;
+    width: 850px;
+}
+
+.thor {
+    margin-left: 470px;
+    color:#1f2937;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
 }
 /* section */
 .action {
-
+    background-color: white;
 }
+
 /* section */
 .footer {
     background-color: #1f2937;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
 }
