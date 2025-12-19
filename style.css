@@ -6,7 +6,7 @@ body {
     background-color: #1f2937;
 }
 
- * {outline: 2px solid red; }/* 2px width, solid style, red color */
+/* * { outline: 2px solid red; }/* 2px width, solid style, red color */
 
 div, p, button, a {
     font-family: 'Roboto';
@@ -20,25 +20,27 @@ a {
 /* section */
 .header {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #1f2937;
     color: white;
     font-family: 'Roboto';
     margin: 24px;
+    gap: 350px;
 }
 
 .left {
     font-size: 24px;
     font-weight: 900;
+    margin-left: 5px;
 }
 
 .right {
     display: flex;
     font-size: 18px;
-    gap: 16px;
+    gap: 24px;
     color:#e5e7eb;
     text-decoration: none;
+    margin-right: 5px;
 }
 
 /* section */
@@ -46,35 +48,30 @@ a {
     display: flex;
     background-color: #1f2937;
     color: white;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 50px;
 }
+
 .awe-left {
     display: flex;
     flex-direction: column;
     font-size: 48px;
     width: 445px;
     height: 300px;
+    gap: 10px;
 }
 
 .maintext {
-    display: flex;
     font-size: 48px;
-    margin:0;
-    margin-top: 50px;
 }
 
-.subtext {
-    display: flex;
-    font-size: 18px;
-    margin:0;
-
+.awe-subtext {
+    font-size: 18px;    
 }
 
 .awe-right {
-    display: flex;
     width: 445px;
     height: 300px;
-    align-items: center;
 }
 
 .signup {
@@ -86,11 +83,52 @@ a {
     width: 125px;
     height: 30px;
     outline: none;
-
 }
+
 /* section */
 .random {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.top {
+    font-size: 36px;
+    font-weight: 900;    
+    margin: 30px;
+    margin-top: 70px;
+}
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+
+}
+.outline {
+    outline: 3px solid #3882f6; 
+    width: 140px;
+    height: 140px;
+    margin: 30px;
+    margin-bottom: 15px;
+    border-radius: 8px; /* Applies an 8px radius to all corners */
+}
+
+.subtext {
+    display: flex;
+    width: 800px;
+    justify-content: space-around;
+    margin-bottom: 70px;
+
+}
+
+.subsubtext {
+    margin: 30px;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    color:#1f2937;
 }
 
 /* section */
@@ -118,9 +156,45 @@ a {
     font-weight: bold;
     font-size: 24px;
 }
+
 /* section */
 .action {
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #3882f6;
+    margin: 80px;
+    width: 1400px;
+    border-radius: 8px; /* Applies an 8px radius to all corners */
+}
+
+.call {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.callbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.callsign {
+    width: 90px;
+    height: 50px;
+    color: #e5e7eb;
+    font-weight: bolder;
+    background-color: #3882f6;
+    border-radius: 8px; /* Applies an 8px radius to all corners */
+    outline-color: white;
+
 }
 
 /* section */
